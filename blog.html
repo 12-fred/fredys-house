@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Fredy's House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le blog de Fredy's House : astuces de cuisine, organisation et inspirations.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Fredy's <span>House</span></a>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="recettes.html">Recettes</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Blog culinaire</h1>
+            <p>Astuces, organisation, inspiration et coulisses de Fredy's House.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Article 1 -->
+                <article class="card card-blog">
+                    <div class="card-body">
+                        <span class="tag tag-blog">Astuce</span>
+                        <h3>5 erreurs à éviter quand on débute en cuisine</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 10 janvier 2026</span>
+                            <span><i class="far fa-user"></i> Fredy</span>
+                        </div>
+                        <p>
+                            Tout le monde fait des erreurs, surtout au début. L’important, c’est de les connaître
+                            pour ne plus les répéter.
+                        </p>
+                        <a href="article.html" class="card-link">
+                            Lire l’article
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="card card-blog">
+                    <div class="card-body">
+                        <span class="tag tag-blog">Organisation</span>
+                        <h3>Comment planifier tes repas pour la semaine</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 5 janvier 2026</span>
+                            <span><i class="far fa-user"></i> Fredy</span>
+                        </div>
+                        <p>
+                            Le “meal prep” peut te sauver la vie les soirs où tu es trop fatigué pour cuisiner.
+                        </p>
+                        <a href="article.html" class="card-link">
+                            Lire l’article
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="card card-blog">
+                    <div class="card-body">
+                        <span class="tag tag-blog">Inspiration</span>
+                        <h3>Les indispensables du placard selon Fredy</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 20 décembre 2025</span>
+                            <span><i class="far fa-user"></i> Fredy</span>
+                        </div>
+                        <p>
+                            Avec quelques ingrédients de base, tu peux improviser un repas délicieux en quelques minutes.
+                        </p>
+                        <a href="article.html" class="card-link">
+                            Lire l’article
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="card card-blog">
+                    <div class="card-body">
+                        <span class="tag tag-blog">Matériel</span>
+                        <h3>Le matériel essentiel pour bien cuisiner</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-calendar"></i> 10 décembre 2025</span>
+                            <span><i class="far fa-user"></i> Fredy</span>
+                        </div>
+                        <p>
+                            Pas besoin de 50 gadgets : quelques bons ustensiles suffisent pour tout cuisiner.
+                        </p>
+                        <a href="article.html" class="card-link">
+                            Lire l’article
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Fredy's House - Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
