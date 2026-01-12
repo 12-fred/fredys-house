@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger maison facile – Recette rapide et gourmande | Fredy’s House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recette de burger maison facile : steak juteux, fromage fondant, sauce maison. Étapes simples, temps de cuisson, conseils de Fredy.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Fredy's <span>House</span></a>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="recettes.html" class="active">Recettes</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <a href="recettes.html" class="back-link"><i class="far fa-arrow-left"></i> Retour aux recettes</a>
+            <h1>Burger maison facile et gourmand</h1>
+            <p>Une recette simple, rapide et ultra gourmande pour tous les jours.</p>
+            <div class="recipe-meta">
+                <span><i class="far fa-clock"></i> 25 min</span>
+                <span><i class="fas fa-user-friends"></i> 4 personnes</span>
+                <span><i class="fas fa-signal"></i> Niveau : Facile</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        
+
+        <div class="container recipe-layout">
+            <div class="recipe-main">
+                <div >
+                     <img src="images/burger.jpg" alt="Burger maison avec steak haché et cheddar fondant" class="recipe-photo">
+                </div>
+
+                <h2>Ingrédients</h2>
+                <ul class="list">
+                    <li>2 pains burger</li>
+                    <li>2 steaks hachés</li>
+                    <li>2 tranches de cheddar</li>
+                    <li>1 tomate</li>
+                    <li>quelques feuilles de salade</li>
+                    <li>1 oignon (facultatif)</li>
+                    <li>Sel, poivre</li>
+                    
+                </ul>
+                <h2>Sauce maison (rapide)</h2>
+                <ul class="list">
+                    <li>2 c. à soupe de mayonnaise</li>
+                    <li>1 c. à soupe de ketchup</li>
+                    <li>1 c. à café de moutarde</li>
+                    <li>Pickles hachés (option)</li>
+                </ul>
+
+
+                <h2>Préparation du burger</h2>
+                <ol class="list list-steps">
+                    <li>Prépare la sauce : mélange mayo, ketchup, moutarde (et pickles si tu veux).</li>
+                    <li>Fais chauffer la poêle. Assaisonne les steaks (sel/poivre) puis saisis 3–4 min par face.</li>
+                    <li>Ajoute le cheddar 1 minute avant la fin pour le faire fondre.</li>
+                    <li>Toaste les pains 1–2 min (poêle ou four) pour qu’ils soient dorés.</li>
+                    <li>Monte le burger : sauce → salade → steak + cheddar → tomate → oignon → sauce → pain.</li>
+                    
+                </ol>
+            </div>
+
+            <aside class="recipe-sidebar">
+                <div class="card">
+                    <h3>Infos rapides</h3>
+                    <ul class="list list-compact">
+                        <li><i class="far fa-clock"></i> Préparation : 10 min</li>
+                        <li><i class="far fa-clock"></i> Cuisson : 15 min</li>
+                        <li><i class="fas fa-utensils"></i> Type : Plat principal</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Conseil de Fredy</h3>
+                    <p>
+                       Pour un steak plus juteux : évite d'appuyer dessus pendant le cuisson. Pour un goût “smash burger” : aplatis légèrement le steak au début (poêle très chaude). Ajoute des oignons caramélisés si tu veux un burger plus gourmand
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Autres recettes</h3>
+                    <ul class="list list-links">
+                        <li><a href="recette-detail.html">Cheesecake au citron</a></li>
+                        <li><a href="recette-detail.html">Salade méditerranéenne</a></li>
+                        <li><a href="recette-detail.html">Curry de légumes</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Fredy's House - Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
