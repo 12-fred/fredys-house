@@ -195,6 +195,56 @@ a {
     background: rgba(255, 123, 84, 0.06);
 }
 
+/*---serving-box---*/
+.servings-box{
+  background: rgba(255,255,255,0.75);
+  border-radius: 18px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow-soft);
+  margin: 14px 0 18px 0;
+}
+
+.servings-row{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.servings-controls{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.servings-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.servings-input{
+  width: 80px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.servings-note,
+.ingredients-optional{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+
 /* Hero image */
 .hero-image {
     position: relative;
@@ -246,13 +296,21 @@ a {
     border-radius: var(--radius-lg);
     padding: 18px 18px 20px;
     box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
 }
 
 .card-recipe,
 .card-blog {
     overflow: hidden;
     padding: 0;
+    
 }
+
+.card-recipe{
+  height: 100%;
+}
+
 
 .card-image {
     height: 170px;
@@ -262,7 +320,22 @@ a {
 
 .card-body {
     padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
 }
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-link{
+  margin-top: auto;   /* pousse le lien tout en bas */
+}
+
 
 .card-body h3 {
     margin: 0 0 6px;
@@ -294,6 +367,7 @@ a {
     gap: 5px;
     font-size: 0.9rem;
     color: var(--primary-dark);
+    
 }
 
 .card-link:hover {
@@ -332,15 +406,15 @@ a {
 
 /* ---------- Images de démo (tu peux remplacer par les tiennes) ---------- */
 .image-1 {
-    background-image: url("https://images.pexels.com/photos/3298637/pexels-photo-3298637.jpeg");
+    background-image: url("images/pâtes-crémeuses-au-poulet.png");
 }
 
 .image-2 {
-    background-image: url("https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg");
+    background-image: url("images/cheese-cake-citron.png");
 }
 
 .image-3 {
-    background-image: url("https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg");
+    background-image: url("images/salade-mediterraneenne.png");
 }
 
 .image-4 {
@@ -348,15 +422,27 @@ a {
 }
 
 .image-5 {
-    background-image: url("https://images.pexels.com/photos/1437268/pexels-photo-1437268.jpeg");
+    background-image: url("images/toast-avocat-oeuf-poche.png");
 }
 
 .image-6 {
-    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg");
+    background-image: url("images/penne-al-pomodoro.png");
 }
 
 .image-7 {
     background-image: url("images/burger.jpg");
+}
+
+.image-8 {
+    background-image: url("images/poulet-creme.png");
+}
+
+.image-9 {
+    background-image: url("images/pates-saumon-citron.png");
+}
+
+.image-10 {
+    background-image: url("images/boeuf-bourguignon.png");
 }
 
 /* ---------- Page headers ---------- */
@@ -490,11 +576,13 @@ a {
 }
 
 /* ---------- Blog article layout ---------- */
-.article-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
-    gap: 32px;
+.article-layout{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
 }
+
 
 .article-content h2 {
     margin-top: 18px;
@@ -505,6 +593,26 @@ a {
     margin-bottom: 12px;
     font-size: 0.95rem;
 }
+
+.article-sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-primary{
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.link-primary:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
 
 /* ---------- Contact ---------- */
 .contact-layout {
