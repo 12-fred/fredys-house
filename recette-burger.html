@@ -28,7 +28,7 @@
             <p>Une recette simple, rapide et ultra gourmande pour tous les jours.</p>
             <div class="recipe-meta">
                 <span><i class="far fa-clock"></i> 25 min</span>
-                <span><i class="fas fa-user-friends"></i> 4 personnes</span>
+                <span><i class="fas fa-user-friends"></i> 2 personnes</span>
                 <span><i class="fas fa-signal"></i> Niveau : Facile</span>
             </div>
         </div>
@@ -44,23 +44,46 @@
                 </div>
 
                 <h2>Ingrédients</h2>
-                <ul class="list">
-                    <li>2 pains burger</li>
-                    <li>2 steaks hachés</li>
-                    <li>2 tranches de cheddar</li>
-                    <li>1 tomate</li>
-                    <li>quelques feuilles de salade</li>
-                    <li>1 oignon (facultatif)</li>
-                    <li>Sel, poivre</li>
-                    
-                </ul>
+
+<div class="servings-box">
+  <div class="servings-row">
+    <strong>Nombre de personnes :</strong>
+    <span data-servings-label>4 personnes</span>
+  </div>
+
+  <div class="servings-controls">
+    <button type="button" class="servings-btn" id="servingsMinus">-</button>
+    <input id="servings" class="servings-input" type="number" min="1" step="1" value="4">
+    <button type="button" class="servings-btn" id="servingsPlus">+</button>
+  </div>
+
+  <p class="servings-note">Les quantités s’ajustent automatiquement.</p>
+</div>
+
+<ul class="list ingredients" data-base-servings="4">
+  <li data-qty="4" data-unit="" data-name="pains burger"></li>
+  <li data-qty="4" data-unit="" data-name="steaks hachés"></li>
+  <li data-qty="4" data-unit="tranches" data-name="cheddar"></li>
+  <li data-qty="2" data-unit="" data-name="tomates"></li>
+  <li data-qty="8" data-unit="feuilles" data-name="salade"></li>
+  <li data-qty="1" data-unit="" data-name="oignon (facultatif)"></li>
+</ul>
+
+<p class="ingredients-optional">Sel, poivre : à ajuster selon le goût.</p>
+
+                
+                
                 <h2>Sauce maison (rapide)</h2>
                 <ul class="list">
-                    <li>2 c. à soupe de mayonnaise</li>
-                    <li>1 c. à soupe de ketchup</li>
+                    <li>4 c. à soupe de mayonnaise</li>
+                    <li>2 c. à soupe de ketchup</li>
                     <li>1 c. à café de moutarde</li>
-                    <li>Pickles hachés (option)</li>
+                    <li>Pickles (facultatif)</li>
+
                 </ul>
+
+
+                
 
 
                 <h2>Préparation du burger</h2>
@@ -94,9 +117,9 @@
                 <div class="card">
                     <h3>Autres recettes</h3>
                     <ul class="list list-links">
-                        <li><a href="recette-detail.html">Cheesecake au citron</a></li>
-                        <li><a href="recette-detail.html">Salade méditerranéenne</a></li>
-                        <li><a href="recette-detail.html">Curry de légumes</a></li>
+                        <li><a href="recette-cheesecake-citron.html">Cheesecake au citron</a></li>
+                        <li><a href="recette-salade-mediterraneenne.html">Salade méditerranéenne</a></li>
+                        <li><a href="recette-boeuf-bourguignon.html">Bœuf bourguignon</a></li>
                     </ul>
                 </div>
             </aside>
@@ -117,5 +140,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
