@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pâtes crémeuses au saumon – Recette rapide et gourmande | Fredy’s House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description" content="Pâtes au saumon et à la crème faciles et rapides. Recette idéale pour un repas gourmand en moins de 30 minutes.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Fredy's <span>House</span></a>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="recettes.html" class="active">Recettes</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <a href="recettes.html" class="back-link"><i class="far fa-arrow-left"></i> Retour aux recettes</a>
+            <h1>Pâtes crémeuses au saumon et citron</h1>
+            <p>Une recette simple, rapide et ultra gourmande pour tous les jours.</p>
+            <div class="recipe-meta">
+                <span><i class="far fa-clock"></i> 25 min</span>
+                <span><i class="fas fa-user-friends"></i> 4 personnes</span>
+                <span><i class="fas fa-signal"></i> Niveau : Facile</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container recipe-layout">
+            <div class="recipe-main">
+                <div > <img src="images/pates-saumon-citron.png"
+                     alt="Pâtes au saumon et citron crémeuses"
+                        class="recipe-photo">
+</div>
+
+                <h2>Ingrédients</h2>
+
+                <div class="servings-box">
+                    <div class="servings-row">
+                        <strong>Nombre de personnes :</strong>
+                        <span data-servings-label>4 personnes</span>
+                    </div>
+
+                    <div class="servings-controls">
+                        <button type="button" class="servings-btn" id="servingsMinus">-</button>
+                        <input id="servings" class="servings-input" type="number" min="1" step="1" value="4">
+                        <button type="button" class="servings-btn" id="servingsPlus">+</button>
+                    </div>
+
+                    <p class="servings-note">Les quantités s’ajustent automatiquement.</p>
+                </div>
+
+                <ul class="list ingredients" data-base-servings="4">
+                    <li data-qty="400" data-unit="g" data-name="pâtes (penne, tagliatelles...)"></li>
+                    <li data-qty="200" data-unit="g" data-name="saumon frais"></li>
+                    <li data-qty="20" data-unit="cl" data-name="crème fraîche"></li>
+                    <li data-qty="1" data-unit="" data-name="échalote"></li>
+                    
+                </ul>
+
+                <p class="ingredients-optional">
+                    Optionnel : persil frais, aneth ou ciboulette, citron pour garnir
+                </p>
+
+              
+
+                <h2>Préparation des pâtes au saumon</h2>
+                <ol class="list list-steps">
+                    <li>Fais cuire les pâtes dans une grande casserole d’eau bouillante salée selon le temps indiqué.</li>
+                    <li>Fais revenir l’échalote dans une poêle.</li>
+                    <li>Ajoute le saumon coupé en dés, puis la crème.</li>
+                    <li>Égoutte les pâtes et mélange-les à la sauce.</li>
+                    <li>Égoutte les pâtes, ajoute-les dans la poêle et mélange bien pour les enrober de sauce.</li>
+                    
+                </ol>
+            </div>
+
+            <aside class="recipe-sidebar">
+                <div class="card">
+                    <h3>Infos rapides</h3>
+                    <ul class="list list-compact">
+                        <li><i class="far fa-clock"></i> Préparation : 10 min</li>
+                        <li><i class="far fa-clock"></i> Cuisson : 15 min</li>
+                        <li><i class="fas fa-utensils"></i> Type : Plat principal</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Conseil de Fredy</h3>
+                    <p>
+                        Tu peux ajouter des champignons, des épinards ou des tomates séchées 
+                        pour encore plus de saveurs.Ajoute un filet de citron ou un peu de parmesan pour relever le goût.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Autres recettes</h3>
+                    <ul class="list list-links">
+                        <li><a href="recette-cheesecake-citron.html">Cheesecake au citron</a></li>
+                        <li><a href="recette-salade-mediterraneenne.html">Salade méditerranéenne</a></li>
+                        <li><a href="recette-boeuf-bourguignon.html">Bœuf bourguignon</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Fredy's House - Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
