@@ -269,7 +269,7 @@ a {
     inset: 0;
     border-radius: var(--radius-xl);
     background-image: linear-gradient(135deg, rgba(23, 22, 21, 0.077), hsla(0, 25%, 13%, 0.287)),
-        url("images/chaomen-crevette.png");
+        url("../images/chaomen-crevette.png");
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-soft);
@@ -407,43 +407,43 @@ a {
 
 /* ---------- Images de démo (tu peux remplacer par les tiennes) ---------- */
 .image-1 {
-    background-image: url("images/pâtes-crémeuses-poulet.png");
+    background-image: url("../images/pâtes-crémeuses-poulet.png");
 }
 
 .image-2 {
-    background-image: url("images/cheese-cake-citron.png");
+    background-image: url("../images/cheese-cake-citron.png");
 }
 
 .image-3 {
-    background-image: url("images/salade-mediterraneenne.png");
+    background-image: url("../images/salade-mediterraneenne.png");
 }
 
 .image-4 {
-    background-image: url("https://images.pexels.com/photos/4109990/pexels-photo-4109990.jpeg");
+    background-image: url("../images/boeuf-bourguignon.png");
 }
 
 .image-5 {
-    background-image: url("images/toast-avocat-oeuf-poche.png");
+    background-image: url("../images/toast-avocat-oeuf-poche.png");
 }
 
 .image-6 {
-    background-image: url("images/penne-al-pomodoro.png");
+    background-image: url("../images/penne-al-pomodoro.png");
 }
 
 .image-7 {
-    background-image: url("images/burger.jpg");
+    background-image: url("../images/burger.jpg");
 }
 
 .image-8 {
-    background-image: url("images/poulet-creme.png");
+    background-image: url("../images/poulet-creme.png");
 }
 
 .image-9 {
-    background-image: url("images/pates-saumon-citron.png");
+    background-image: url("../images/pates-saumon-citron.png");
 }
 
 .image-10 {
-    background-image: url("images/boeuf-bourguignon.png");
+    background-image: url("../images/boeuf-bourguignon.png");
 }
 
 /* ---------- Page headers ---------- */
