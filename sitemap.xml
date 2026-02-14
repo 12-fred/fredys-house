@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page Accueil -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/</loc>
+  </url>
+
+  <!-- Page Recettes -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/</loc>
+  </url>
+
+
+
+
+  <!-- Page Blog -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/burger-maison/</loc>
+  </url>
+
+ 
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/erreurs-cuisine/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/indispensables-placard/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/organiser-cuisine/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/planifier-repas-semaine/</loc>
+  </url>
+
+ 
+
+
+  <!-- Page Contact -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/contact/</loc>
+  </url>
+
+  <!-- Page Pilier Repas Rapide -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/repas-rapide-idees-semaine/</loc>
+  </url>
+
+  <!-- Article Cuisiner de Saison -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/cuisiner-saisonnier/</loc>
+  </url>
+
+  <!-- Article Sauces Maison -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/blog/sauces-maison-faciles/</loc>
+  </url>
+
+  <!-- Exemple Recettes -->
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/poulet-creme/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/burger-maison/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/penne-pomodoro/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/salade-mediterraneenne/</loc>
+  </url>
+
+  <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/tartines-avocat/</loc>
+  </url>
+
+     <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/boeuf-bourguignon/</loc>
+  </url>
+
+ 
+
+   <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/cheese-cake-citron/</loc>
+  </url>
+
+   <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/pates-cremeuse-poulet/</loc>
+  </url>
+
+   <url>
+    <loc>https://12-fred.github.io/fredys-house/recettes/pates-saumon-creme/</loc>
+  </url>
+
+  
+
+</urlset>
