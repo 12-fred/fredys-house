@@ -375,6 +375,66 @@ a {
     text-decoration: underline;
 }
 
+/* ===== CARD IMAGE VERSION IMG ===== */
+
+/* ===== CARD RECIPE ===== */
+
+.card-recipe {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-recipe .card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-recipe .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card-recipe:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #777;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+
+
 /* Tags */
 .tag {
     display: inline-block;
@@ -405,7 +465,7 @@ a {
     color: #4a3bba;
 }
 
-/* ---------- Images de démo (tu peux remplacer par les tiennes) ---------- */
+/* ---------- Images de démo (tu peux remplacer par les tiennes) 
 .image-1 {
     background-image: url("../images/pâtes-crémeuses-poulet.png");
 }
@@ -448,7 +508,7 @@ a {
 
 .image-11 {
     background-image: url("../images/chaomen-crevette.png");
-}
+}---------- */
 
 
 /* ---------- Page headers ---------- */
