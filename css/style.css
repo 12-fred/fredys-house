@@ -407,7 +407,7 @@ a {
 
 /* ---------- Images de démo (tu peux remplacer par les tiennes) ---------- */
 .image-1 {
-    background-image: url("../images/pâtes-crémeuses-poulet.png");
+    background-image: url("../images/pâtes-crémeuses-poulet.png");
 }
 
 .image-2 {
@@ -443,12 +443,13 @@ a {
 }
 
 .image-10 {
-    background-image: url("../images/boeuf-bourguignon.png");
-}
-
-.image-10 {
     background-image: url("../images/poulet-miel.png");
 }
+
+.image-11 {
+    background-image: url("../images/chaomen-crevette.png");
+}
+
 
 /* ---------- Page headers ---------- */
 .page-header {
