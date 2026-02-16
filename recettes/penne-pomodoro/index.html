@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Penne al Pomodoro – Recette italienne facile et authentique | Fredy’s House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Recette de Penne al Pomodoro authentique : pâtes italiennes à la sauce tomate maison, ail, basilic et huile d’olive. Simple, rapide et savoureuse.">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <meta name="description"
+        content="Recette de Penne al Pomodoro authentique : pâtes italiennes à la sauce tomate maison, ail, basilic et huile d’olive. Simple, rapide et savoureuse.">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 </head>
+
 <body>
     <header class="header">
         <div class="container nav-container">
             <a href="../../" class="logo">Fredy's <span>House</span></a>
+
             <nav class="nav">
                 <a href="../../">Accueil</a>
                 <a href="../" class="active">Recettes</a>
@@ -21,11 +25,13 @@
         </div>
     </header>
 
+
+
     <section class="page-header">
         <div class="container">
             <a href="../" class="back-link"><i class="far fa-arrow-left"></i> Retour aux recettes</a>
             <h1>Penne al Pomodoro – la recette italienne authentique</h1>
-            <p class="recipe-intro"> 
+            <p class="recipe-intro">
                 La Penne al Pomodoro est un grand classique de la cuisine italienne.
                 Une recette simple et rapide à base de tomates, d’ail, d’huile d’olive
                 et de basilic frais. Peu d’ingrédients, mais beaucoup de goût.
@@ -42,62 +48,61 @@
         <div class="container recipe-layout">
             <div class="recipe-main">
                 <div>
-                     <img src="../../images/penne-al-pomodoro.png"
-                       alt="Penne al pomodoro avec sauce tomate et basilic frais"
-                       class="recipe-photo">
+                    <img src="/images/penne-al-pomodoro.png" alt="Penne al pomodoro avec sauce tomate et basilic frais"
+                        class="recipe-photo">
                 </div>
-                
+
 
                 <h2>Ingrédients</h2>
                 <ul class="list">
 
-                <div class="servings-box">
-                    <div class="servings-row">
-                        <strong>Nombre de personnes :</strong>
-                        <span data-servings-label>4 personnes</span>
+                    <div class="servings-box">
+                        <div class="servings-row">
+                            <strong>Nombre de personnes :</strong>
+                            <span data-servings-label>4 personnes</span>
+                        </div>
+
+                        <div class="servings-controls">
+                            <button type="button" class="servings-btn" id="servingsMinus">-</button>
+                            <input id="servings" class="servings-input" type="number" min="1" step="1" value="4">
+                            <button type="button" class="servings-btn" id="servingsPlus">+</button>
+                        </div>
+
+                        <p class="servings-note">Les quantités s’ajustent automatiquement.</p>
                     </div>
 
-                    <div class="servings-controls">
-                        <button type="button" class="servings-btn" id="servingsMinus">-</button>
-                        <input id="servings" class="servings-input" type="number" min="1" step="1" value="4">
-                        <button type="button" class="servings-btn" id="servingsPlus">+</button>
-                    </div>
+                    <ul class="list ingredients" data-base-servings="4">
+                        <li data-qty="400" data-unit="g" data-name="penne (pâtes, tagliatelles...)"></li>
+                        <li data-qty="2" data-unit="" data-name="tomates concassées"></li>
 
-                    <p class="servings-note">Les quantités s’ajustent automatiquement.</p>
-                </div>
+                        <li data-qty="2" data-unit="" data-name="gousses d’ail"></li>
 
-                <ul class="list ingredients" data-base-servings="4">
-                    <li data-qty="400" data-unit="g" data-name="penne (pâtes, tagliatelles...)"></li>
-                    <li data-qty="2" data-unit="" data-name="tomates concassées"></li>
-                   
-                    <li data-qty="2" data-unit="" data-name="gousses d’ail"></li>
-                   
-                    <li data-qty="4" data-unit="c. à soupe" data-name="huile d’olive"></li>
-                </ul>
+                        <li data-qty="4" data-unit="c. à soupe" data-name="huile d’olive"></li>
+                    </ul>
 
-                <p class="ingredients-optional">
-                    Optionnel : persil frais, quelques feuilles de basilic, parmesan
-                
-                    
-                </p>
+                    <p class="ingredients-optional">
+                        Optionnel : persil frais, quelques feuilles de basilic, parmesan
 
-                <h2>Préparation de la Penne al Pomodoro</h2>
-                <ol class="list list-steps">
-                    <li>Fais chauffer l’huile d’olive dans une casserole à feu doux.</li>
-                    <li>Ajoute l’ail finement haché et fais-le revenir sans le colorer.</li>
-                    <li>Verse les tomates concassées, sale, poivre et laisse mijoter 15 minutes.</li>
-                    <li>Pendant ce temps, fais cuire les penne dans une grande eau salée.</li>
-                    <li>Égoutte les pâtes al dente en gardant une louche d’eau de cuisson.</li>
-                    <li>Mélange les pâtes avec la sauce tomate, ajoute un peu d’eau de cuisson si nécessaire.</li>
-                    <li>Ajoute le basilic frais juste avant de servir.</li>
-                    
-                </ol>
-                 <h2>Variantes possibles</h2>
-                  <ul class="list">
-                    <li>Penne al pomodoro e mozzarella (ajout de mozzarella fraîche).</li>
-                    <li>Penne arrabbiata (ajout de piment).</li>
-                    <li>Ajout d’olives ou de câpres pour une touche méditerranéenne.</li>
-                  </ul>
+
+                    </p>
+
+                    <h2>Préparation de la Penne al Pomodoro</h2>
+                    <ol class="list list-steps">
+                        <li>Fais chauffer l’huile d’olive dans une casserole à feu doux.</li>
+                        <li>Ajoute l’ail finement haché et fais-le revenir sans le colorer.</li>
+                        <li>Verse les tomates concassées, sale, poivre et laisse mijoter 15 minutes.</li>
+                        <li>Pendant ce temps, fais cuire les penne dans une grande eau salée.</li>
+                        <li>Égoutte les pâtes al dente en gardant une louche d’eau de cuisson.</li>
+                        <li>Mélange les pâtes avec la sauce tomate, ajoute un peu d’eau de cuisson si nécessaire.</li>
+                        <li>Ajoute le basilic frais juste avant de servir.</li>
+
+                    </ol>
+                    <h2>Variantes possibles</h2>
+                    <ul class="list">
+                        <li>Penne al pomodoro e mozzarella (ajout de mozzarella fraîche).</li>
+                        <li>Penne arrabbiata (ajout de piment).</li>
+                        <li>Ajout d’olives ou de câpres pour une touche méditerranéenne.</li>
+                    </ul>
             </div>
 
             <aside class="recipe-sidebar">
@@ -113,16 +118,17 @@
                 <div class="card">
                     <h3>Conseil de Fredy</h3>
                     <p>
-                        Utilise des tomates de qualité pour une sauce plus savoureuse.Ne brûle jamais l’ail : il doit juste parfumer l’huile.Ajoute le parmesan au moment de servir, pas dans la sauce.
+                        Utilise des tomates de qualité pour une sauce plus savoureuse.Ne brûle jamais l’ail : il doit
+                        juste parfumer l’huile.Ajoute le parmesan au moment de servir, pas dans la sauce.
                     </p>
                 </div>
 
                 <div class="card">
                     <h3>Autres recettes</h3>
                     <ul class="list list-links">
-                        <li><a href="../cheese-cake-citron/">Cheesecake au citron</a></li>
-                        <li><a href="../salade-mediterraneenne/">Salade méditerranéenne</a></li>
-                        <li><a href="../boeuf-bourguignon/">Bœuf bourguignon</a></li>
+                        <li><a href="/recettes/cheese-cake-citron/">Cheesecake au citron</a></li>
+                        <li><a href="/recettes/salade-mediterraneenne/">Salade méditerranéenne</a></li>
+                        <li><a href="/recettes/boeuf-bourguignon/">Bœuf bourguignon</a></li>
                     </ul>
                 </div>
             </aside>
@@ -143,6 +149,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <script src="../../js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
