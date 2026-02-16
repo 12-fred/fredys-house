@@ -14,16 +14,30 @@
 <body>
     <header class="header">
         <div class="container nav-container">
-            <a href="../../" class="logo">Fredy's <span>House</span></a>
+            <a href="#" class="logo" data-home>Fredy's <span>House</span></a>
 
             <nav class="nav">
-                <a href="../../">Accueil</a>
-                <a href="../" class="active">Recettes</a>
-                <a href="../../blog/">Blog</a>
-                <a href="../../contact/">Contact</a>
+                <a href="#" data-home>Accueil</a>
+                <a href="#" data-recettes>Recettes</a>
+                <a href="#" data-blog>Blog</a>
+                <a href="#" data-contact>Contact</a>
             </nav>
         </div>
     </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const base = location.hostname.includes("github.io") ? "/fredys-house" : "";
+            const set = (sel, path) => {
+                document.querySelectorAll(sel).forEach(a => a.setAttribute("href", base + path));
+            };
+            set("[data-home]", "/");
+            set("[data-recettes]", "/recettes/");
+            set("[data-blog]", "/blog/");
+            set("[data-contact]", "/contact/");
+        });
+    </script>
+
 
     <section class="page-header">
         <div class="container">
