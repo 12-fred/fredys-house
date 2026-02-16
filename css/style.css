@@ -446,6 +446,10 @@ a {
     background-image: url("../images/boeuf-bourguignon.png");
 }
 
+.image-10 {
+    background-image: url("../images/poulet-miel.png");
+}
+
 /* ---------- Page headers ---------- */
 .page-header {
     padding: 40px 0 20px;
