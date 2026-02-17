@@ -7,6 +7,11 @@
     <meta name="description"
         content="Découvrez 25 recettes rapides faciles (moins de 30 minutes) : idées repas du soir, plats pas chers, recettes express, astuces et menus semaine.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Recettes rapides faciles : 30 idées en moins de 30 minutes">
+    <meta property="og:description"
+        content="30 recettes rapides faciles pour le soir : pâtes, poulet, salades et menus semaine.">
+    <meta property="og:type" content="article">
+
 
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
@@ -14,25 +19,42 @@
 
 <body>
 
-    <!-- Header (version relative fiable) -->
     <header class="header">
         <div class="container nav-container">
-            <a href="../../" class="logo">Fredy's <span>House</span></a>
+            <a href="#" class="logo" data-home>Fredy's <span>House</span></a>
+
             <nav class="nav">
-                <a href="../../">Accueil</a>
-                <a href="../../recettes/">Recettes</a>
-                <a href="../" class="active">Blog</a>
-                <a href="../../contact/">Contact</a>
+                <a href="#" data-home>Accueil</a>
+                <a href="#" data-recettes>Recettes</a>
+                <a href="#" data-blog>Blog</a>
+                <a href="#" data-contact>Contact</a>
             </nav>
         </div>
     </header>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const base = location.hostname.includes("github.io") ? "/fredys-house" : "";
+            const set = (sel, path) => {
+                document.querySelectorAll(sel).forEach(a => a.setAttribute("href", base + path));
+            };
+            set("[data-home]", "/");
+            set("[data-recettes]", "/recettes/");
+            set("[data-blog]", "/blog/");
+            set("[data-contact]", "/contact/");
+        });
+    </script>
+
     <!-- Hero -->
-    <section class="page-header">
+    <section class="page-header page-header-pilier">
+
         <div class="container">
             <a href="../" class="back-link"><i class="far fa-arrow-left"></i> Retour au blog</a>
-            <h1>Recettes rapides faciles : 25 idées de repas prêts en moins de 30 minutes</h1>
-            <p>Des idées de repas du soir simples, rapides et gourmands + méthodes pour cuisiner vite toute la semaine.
+            <h1>Recettes rapides faciles : 30 idées prêtes en moins de 30 minutes</h1>
+            <p>
+                Les <strong>recettes rapides faciles</strong> sont la solution idéale quand on manque de temps
+                mais qu’on veut manger maison. Découvrez ici des idées simples,
+                équilibrées et prêtes en 20 à 30 minutes.
             </p>
 
             <div class="recipe-meta">
@@ -46,32 +68,56 @@
     <section class="section">
         <div class="container article-layout">
 
+
             <!-- CONTENU -->
             <article class="article-content">
+
+
+                <!-- Sommaire -->
+                <div class="sommaire">
+                    <h2>Sommaire</h2>
+                    <ul>
+                        <li><a href="#pourquoi">Pourquoi choisir des recettes rapides faciles ?</a></li>
+                        <li><a href="#liste">30 recettes rapides faciles (moins de 30 minutes)</a></li>
+                        <li><a href="#pates">Pâtes rapides express</a></li>
+                        <li><a href="#poulet">Recettes rapides au poulet</a></li>
+                        <li><a href="#healthy">Recettes rapides et saines</a></li>
+                        <li><a href="#pas-cher">Recettes rapides pas chères</a></li>
+                        <li><a href="#moins-10">Recettes en moins de 10 minutes</a></li>
+                        <li><a href="#organisation">Comment cuisiner plus vite (méthode simple)</a></li>
+                        <li><a href="#menu-semaine">Menu rapide pour la semaine</a></li>
+                        <li><a href="#faq">FAQ – Recettes rapides faciles</a></li>
+                    </ul>
+                </div>
+
+
 
                 <p>
                     Vous cherchez des <strong>recettes rapides faciles</strong> pour gagner du temps sans manger
                     n’importe quoi ?
                     Entre le travail, les trajets et la fatigue, on veut tous des <strong>idées de repas
                         rapides</strong> qui restent
-                    bonnes et accessibles. La bonne nouvelle : avec quelques bases (pâtes, œufs, poulet, légumes, sauces
+                    bonnes et accessibles. La bonne nouvelle : avec quelques bases (pâtes, œufs, poulet, légumes,
+                    sauces
                     simples),
                     on peut préparer un <strong>dîner rapide</strong> en 10 à 30 minutes.
                 </p>
 
                 <p>
-                    Dans ce guide, je vous donne <strong>25 recettes rapides</strong> (classées par catégories), des
+                    Dans ce guide, je vous donne <strong>30 recettes rapides</strong> (classées par catégories), des
                     conseils d’organisation,
-                    et un menu type pour la semaine. Vous pourrez aussi cliquer vers les recettes détaillées de Fredy’s
+                    et un menu type pour la semaine. Vous pourrez aussi cliquer vers les recettes détaillées de
+                    Fredy’s
                     House.
                 </p>
 
-                <h2>Pourquoi choisir des recettes rapides faciles ?</h2>
+                <h2 id="pourquoi">Pourquoi choisir des recettes rapides faciles ?</h2>
                 <h3>Gagner du temps au quotidien</h3>
                 <p>
                     Une recette rapide, c’est souvent une recette avec peu d’étapes, une cuisson courte, et des
                     ingrédients simples.
-                    Résultat : moins de stress, moins de vaisselle, et plus de régularité (ce qui aide aussi le budget).
+                    Résultat : moins de stress, moins de vaisselle, et plus de régularité (ce qui aide aussi le
+                    budget).
                 </p>
 
                 <h3>Manger plus sainement</h3>
@@ -82,20 +128,30 @@
 
                 <h3>Faire des économies</h3>
                 <p>
-                    Les plats rapides utilisent souvent des ingrédients de base : pâtes, riz, œufs, conserves, légumes
+                    Les plats rapides utilisent souvent des ingrédients de base : pâtes, riz, œufs, conserves,
+                    légumes
                     surgelés.
                     Parfait pour un <strong>repas rapide pas cher</strong>.
                 </p>
 
                 <hr />
 
-                <h2>25 recettes rapides faciles (moins de 30 minutes)</h2>
+                <h2 id="liste">30 recettes rapides faciles (moins de 30 minutes)</h2>
                 <p>
                     Ci-dessous, je classe les idées par catégories (pâtes, poulet, salades, végétarien, budget…).
                     Pour les recettes déjà disponibles sur ton site, je mets un lien direct.
                 </p>
 
-                <h3>🍝 Pâtes rapides</h3>
+                <div class="category-highlight">
+                    <h3 id="pates">🍝 Pâtes rapides</h3>
+                    <p>Des plats simples et rapides prêts en moins de 25 minutes.</p>
+                </div>
+                <div class="fredy-tip">
+                    <strong>💡 Astuce de Fredy :</strong>
+                    Garde toujours du poulet, des pâtes et des légumes surgelés.
+                    Avec ça, tu peux improviser un repas rapide en 15 minutes.
+                </div>
+
                 <ul>
                     <li><strong>Penne al pomodoro</strong> (20 min) — <a class="link-primary"
                             href="../../recettes/penne-pomodoro/">Voir la recette</a></li>
@@ -105,8 +161,10 @@
                             href="../../recettes/pates-saumon-creme/">Voir la recette</a></li>
                     <li><strong>Spaghetti ail-huile-piment</strong> (10 min) — ultra rapide, 4 ingrédients</li>
                 </ul>
+                <div class="category-highlight">
+                    <h3 >🍗 Poulet express</h3>
+                </div>
 
-                <h3>🍗 Poulet express</h3>
                 <ul>
                     <li><strong>Poulet à la crème</strong> (30 min) — <a class="link-primary"
                             href="../../recettes/poulet-creme/">Voir la recette</a></li>
@@ -115,7 +173,25 @@
                     <li><strong>Poulet curry coco</strong> (25–30 min) — parfait avec riz</li>
                 </ul>
 
-                <h3>🥗 Salades & repas légers</h3>
+                <h2 id="poulet">Recettes rapides au poulet</h2>
+
+                <p>Le poulet est l’ingrédient parfait pour un repas rapide et équilibré.</p>
+
+                <ul>
+                    <li><a href="../../recettes/poulet-miel-moutarde-four/" class="link-primary">Poulet miel
+                            moutarde au
+                            four (30 min)</a>
+                    </li>
+
+                    <li><a href="../../recettes/bowl-poulet-avocat-riz/" class="link-primary">Bowl poulet avocat
+                            riz</a>
+                    </li>
+                </ul>
+                <div class="category-highlight">
+                    <h3 >🥗 Salades & repas légers</h3>
+                </div>
+
+
                 <ul>
                     <li><strong>Salade méditerranéenne</strong> (15 min) — <a class="link-primary"
                             href="../../recettes/salade-mediterraneenne/">Voir la recette</a></li>
@@ -125,7 +201,16 @@
                     <li><strong>Salade poulet-avocat</strong> (20 min)</li>
                 </ul>
 
-                <h3>🍔 Plats gourmands rapides</h3>
+                <h2 id="healthy">Recettes rapides et saines</h2>
+
+                <ul>
+                    <li><a href="../../recettes/bowl-poulet-avocat-riz/">Bowl poulet avocat riz</a></li>
+                    <li><a href="../../recettes/salade-mediterraneenne/">Salade méditerranéenne</a></li>
+                    <li><a href="../../recettes/tartines-avocat/">Tartines avocat œuf poché</a></li>
+                </ul>
+
+
+                <h3 >🍔 Plats gourmands rapides</h3>
                 <ul>
                     <li><strong>Burger maison facile</strong> (20 min) — <a class="link-primary"
                             href="../../recettes/burger-maison/">Voir la recette</a></li>
@@ -134,7 +219,7 @@
                     <li><strong>Grilled cheese</strong> (10 min)</li>
                 </ul>
 
-                <h3>💸 Recettes rapides pas chères</h3>
+                <h3 id="pas-cher">💸 Recettes rapides pas chères</h3>
                 <ul>
                     <li><strong>Omelette du frigo</strong> (10 min)</li>
                     <li><strong>Riz sauté</strong> (15 min)</li>
@@ -150,7 +235,7 @@
                     <li><strong>Salade lentilles</strong> (20 min)</li>
                 </ul>
 
-                <h3>⚡ Moins de 10 minutes</h3>
+                <h3 id="moins-10">⚡ Moins de 10 minutes</h3>
                 <ul>
                     <li><strong>Bruschetta tomate-mozza</strong> (10 min)</li>
                     <li><strong>Toast jambon-fromage</strong> (8 min)</li>
@@ -160,7 +245,7 @@
 
                 <hr />
 
-                <h2>Comment cuisiner encore plus vite (méthode simple)</h2>
+                <h2 id="organisation">Comment cuisiner encore plus vite (méthode simple)</h2>
                 <h3>La règle “3 éléments”</h3>
                 <p>
                     Un repas rapide réussi = <strong>1 protéine + 1 féculent + 1 légume</strong>.
@@ -185,7 +270,8 @@
 
                 <p>
                     👉 Pour aller plus loin, lis aussi :
-                    <a class="link-primary" href="../repas-rapide-idees-semaine/"><strong>Idées de repas rapides pour la
+                    <a class="link-primary" href="../repas-rapide-idees-semaine/"><strong>Idées de repas rapides
+                            pour la
                             semaine</strong></a>
                     et
                     <a class="link-primary" href="../planifier-repas-semaine/"><strong>Planifier tes repas pour la
@@ -194,11 +280,13 @@
 
                 <hr />
 
-                <h2>Menu rapide : idées de repas pour la semaine</h2>
+                <h2 id="menu-semaine">Menu rapide : idées de repas pour la semaine</h2>
                 <ul>
-                    <li><strong>Lundi</strong> : <a class="link-primary" href="../../recettes/penne-pomodoro/">Penne al
+                    <li><strong>Lundi</strong> : <a class="link-primary" href="../../recettes/penne-pomodoro/">Penne
+                            al
                             pomodoro</a></li>
-                    <li><strong>Mardi</strong> : <a class="link-primary" href="../../recettes/poulet-creme/">Poulet à la
+                    <li><strong>Mardi</strong> : <a class="link-primary" href="../../recettes/poulet-creme/">Poulet
+                            à la
                             crème</a></li>
                     <li><strong>Mercredi</strong> : <a class="link-primary"
                             href="../../recettes/salade-mediterraneenne/">Salade méditerranéenne</a></li>
@@ -210,7 +298,7 @@
 
                 <hr />
 
-                <h2>FAQ – Recettes rapides faciles</h2>
+                <h2 id="faq">FAQ – Recettes rapides faciles</h2>
                 <h3>Quelle recette rapide faire le soir quand on est fatigué ?</h3>
                 <p>Une omelette + salade, des pâtes tomate, ou un wrap poulet crudités : simple et efficace.</p>
 
@@ -218,12 +306,14 @@
                 <p>Pâtes, riz, œufs, conserves et légumes surgelés : c’est la base d’un menu économique.</p>
 
                 <h3>Peut-on manger équilibré avec des recettes rapides ?</h3>
-                <p>Oui : ajoute toujours un légume (même surgelé) et une protéine (œufs, poulet, thon, pois chiches).
+                <p>Oui : ajoute toujours un légume (même surgelé) et une protéine (œufs, poulet, thon, pois
+                    chiches).
                 </p>
 
                 <h2>Conclusion</h2>
                 <p>
-                    Avec ces <strong>recettes rapides faciles</strong>, tu peux cuisiner maison même quand tu as zéro
+                    Avec ces <strong>recettes rapides faciles</strong>, tu peux cuisiner maison même quand tu as
+                    zéro
                     temps.
                     Choisis 2–3 recettes cette semaine, construis ta routine, et fais tourner tes plats préférés.
                 </p>
