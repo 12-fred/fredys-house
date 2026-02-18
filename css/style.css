@@ -509,7 +509,7 @@ a {
                     rgba(0,0,0,0.6),
                     rgba(0,0,0,0.6)
                 ),
-                url("/images/recettes-rapides.png");
+                url("../images/recettes-rapides.png");
 
     background-size: cover;
     background-position: center 20%;
